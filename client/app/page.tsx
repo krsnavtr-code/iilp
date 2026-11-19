@@ -28,12 +28,12 @@ const COURSE_CATEGORIES: CourseCategory[] = [
     description:
       "Career-boosting management degrees and executive diplomas designed for working professionals and fresh graduates.",
     popularCourses: [
-      { name: "Online MBA (Dual Specialisation)", duration: "2 Years", eligibility: "Graduation (Any Stream)", path: "/mba" },
-      { name: "Online BBA (Bachelor of Business Admin)", duration: "3 Years", eligibility: "10+2 / Higher Secondary", path: "/bba" },
-      { name: "Executive MBA (Fast-Track)", duration: "1 Year", eligibility: "Graduation + Experience", path: "/mba" },
-      { name: "Advance Diploma in Business Administration", duration: "1 Year", eligibility: "10+2 or Diploma", path: "/diploma" },
-      { name: "Post Graduate Diploma in HR / Finance / Marketing", duration: "1 Year", eligibility: "Graduation", path: "/diploma" },
-      { name: "Diploma in Tourism & Hospital Management", duration: "1 Year", eligibility: "10+2", path: "/diploma" },
+      { name: "Online MBA (Dual Specialisation)", duration: "2 Years", eligibility: "Graduation (Any Stream)", path: "/admission" },
+      { name: "Online BBA (Bachelor of Business Admin)", duration: "3 Years", eligibility: "10+2 / Higher Secondary", path: "/admission" },
+      { name: "Executive MBA (Fast-Track)", duration: "1 Year", eligibility: "Graduation + Experience", path: "/admission" },
+      { name: "Advance Diploma in Business Administration", duration: "1 Year", eligibility: "10+2 or Diploma", path: "/admission" },
+      { name: "Post Graduate Diploma in HR / Finance / Marketing", duration: "1 Year", eligibility: "Graduation", path: "/admission" },
+      { name: "Diploma in Tourism & Hospital Management", duration: "1 Year", eligibility: "10+2", path: "/admission" },
     ],
   },
   {
@@ -44,11 +44,11 @@ const COURSE_CATEGORIES: CourseCategory[] = [
     description:
       "High-demand computer applications, software engineering, cloud computing, and IT certification programs.",
     popularCourses: [
-      { name: "Online MCA (Master of Computer Applications)", duration: "2 Years", eligibility: "BCA / B.Sc / Graduate with Math", path: "/mca" },
-      { name: "Online BCA (Bachelor of Computer Applications)", duration: "3 Years", eligibility: "10+2 (Any Stream)", path: "/bca" },
-      { name: "Advance Diploma in Hardware & Networking", duration: "1 Year", eligibility: "10th / 10+2", path: "/diploma" },
-      { name: "Diploma in Software Engineering & Web Tech", duration: "1 Year", eligibility: "10+2 / ITI", path: "/diploma" },
-      { name: "Cyber Security & Information Assurance", duration: "6-12 Months", eligibility: "10+2 or Graduate", path: "/diploma" },
+      { name: "Online MCA (Master of Computer Applications)", duration: "2 Years", eligibility: "BCA / B.Sc / Graduate with Math", path: "/admission" },
+      { name: "Online BCA (Bachelor of Computer Applications)", duration: "3 Years", eligibility: "10+2 (Any Stream)", path: "/admission" },
+      { name: "Advance Diploma in Hardware & Networking", duration: "1 Year", eligibility: "10th / 10+2", path: "/admission" },
+      { name: "Diploma in Software Engineering & Web Tech", duration: "1 Year", eligibility: "10+2 / ITI", path: "/admission" },
+      { name: "Cyber Security & Information Assurance", duration: "6-12 Months", eligibility: "10+2 or Graduate", path: "/admission" },
     ],
   },
   {
@@ -59,12 +59,12 @@ const COURSE_CATEGORIES: CourseCategory[] = [
     description:
       "Comprehensive B.Tech degrees, lateral entry pathways, and advance polytechnic engineering diplomas.",
     popularCourses: [
-      { name: "B.Tech Lateral Entry (Working Professionals)", duration: "3 Years", eligibility: "Polytechnic Diploma / B.Sc", path: "/btech" },
-      { name: "Advance Diploma in Mechanical Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/btech" },
-      { name: "Advance Diploma in Civil Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/btech" },
-      { name: "Advance Diploma in Computer Science Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/btech" },
-      { name: "Advance Diploma in Electrical & Electronics", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/btech" },
-      { name: "Advance Diploma in Automobile Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/btech" },
+      { name: "B.Tech Lateral Entry (Working Professionals)", duration: "3 Years", eligibility: "Polytechnic Diploma / B.Sc", path: "/admission" },
+      { name: "Advance Diploma in Mechanical Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/admission" },
+      { name: "Advance Diploma in Civil Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/admission" },
+      { name: "Advance Diploma in Computer Science Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/admission" },
+      { name: "Advance Diploma in Electrical & Electronics", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/admission" },
+      { name: "Advance Diploma in Automobile Engineering", duration: "3 Years / Lateral", eligibility: "10th / 10+2 / ITI", path: "/admission" },
     ],
   },
   {
@@ -75,10 +75,10 @@ const COURSE_CATEGORIES: CourseCategory[] = [
     description:
       "Creative and new-age career specialisations in digital performance marketing, multimedia, and design.",
     popularCourses: [
-      { name: "Bachelor Programme in Animation & Multimedia", duration: "3 Years", eligibility: "10+2 (Any Stream)", path: "/bca" },
-      { name: "Advance Diploma in Interior Design", duration: "1 Year", eligibility: "10+2", path: "/diploma" },
-      { name: "Certified Digital Marketing Specialist", duration: "6 Months", eligibility: "10+2 or Graduate", path: "/diploma" },
-      { name: "Professional Financial Analysis & Accounting", duration: "1 Year", eligibility: "10+2 Commerce / Graduate", path: "/diploma" },
+      { name: "Bachelor Programme in Animation & Multimedia", duration: "3 Years", eligibility: "10+2 (Any Stream)", path: "/admission" },
+      { name: "Advance Diploma in Interior Design", duration: "1 Year", eligibility: "10+2", path: "/admission" },
+      { name: "Certified Digital Marketing Specialist", duration: "6 Months", eligibility: "10+2 or Graduate", path: "/admission" },
+      { name: "Professional Financial Analysis & Accounting", duration: "1 Year", eligibility: "10+2 Commerce / Graduate", path: "/admission" },
     ],
   },
 ];

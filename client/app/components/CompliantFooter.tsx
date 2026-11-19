@@ -142,32 +142,32 @@ export default function CompliantFooter({
             </h4>
             <ul className={`space-y-1.5 text-xs ${isDark ? "text-slate-300" : "text-slate-600"}`}>
               <li>
-                <Link href="/mba" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   Online MBA (Dual Specialisations)
                 </Link>
               </li>
               <li>
-                <Link href="/bba" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   Online BBA (Business Administration)
                 </Link>
               </li>
               <li>
-                <Link href="/mca" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   Online MCA (Computer Applications)
                 </Link>
               </li>
               <li>
-                <Link href="/bca" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   Online BCA (Computer Applications)
                 </Link>
               </li>
               <li>
-                <Link href="/btech" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   B.Tech Engineering &amp; Lateral Entry
                 </Link>
               </li>
               <li>
-                <Link href="/diploma" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
+                <Link href="/admission" className={`${isDark ? "hover:text-white" : "hover:text-slate-900 font-medium"} transition-colors`}>
                   Advance Polytechnic &amp; Engg. Diplomas
                 </Link>
               </li>
