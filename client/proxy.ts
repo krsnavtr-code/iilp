@@ -7,7 +7,7 @@ export function proxy(request: NextRequest) {
   const rootDomain = (
     process.env.ROOT_DOMAIN ||
     process.env.NEXT_PUBLIC_ROOT_DOMAIN ||
-    "collegevihar.com"
+    "iimsr.net.in"
   ).toLowerCase();
 
   // Check if current hostname is the root domain, www, bare IP, or plain localhost

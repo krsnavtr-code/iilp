@@ -28,16 +28,16 @@ export default function Navbar({
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
       {/* Top Compliance Strip */}
-      <div className="bg-[#0b1f44] text-white text-[11px] py-1.5 px-4 font-semibold">
+      <div className="bg-[#071b4b] text-white text-[11px] py-1.5 px-4 font-semibold">
         <div className="w-[min(1240px,94%)] mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
             <span>
-              CollegeVihar is an Authorized Admission &amp; Marketing Channel Partner for {universityName}
+              Imperial Institute of Management Science &amp; Research • ISO 9001:2015 Certified Autonomous Institution
             </span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-slate-300">
-            <span>Helpline: <strong className="text-white">+91 9266585858</strong></span>
+            <span>Helpline: <strong className="text-white">+91 8287434343</strong></span>
             <span>•</span>
             <a href="/disclaimer" className="text-[#f5c84b] hover:underline">Statutory Disclosure</a>
           </div>
@@ -51,15 +51,15 @@ export default function Navbar({
             href="#top"
             className="flex items-center text-2xl font-black tracking-tight"
           >
-            <span className="text-[#0066ff]">College</span><span className="text-[#ee4231]">Vihar</span>
+            <span className="text-[#071b4b]">IIMSR</span>
           </a>
           <span className="hidden sm:inline-block h-6 w-px bg-slate-200"></span>
           <div className="hidden sm:flex flex-col">
             <span className="text-xs font-bold text-slate-800 leading-tight">
-              {universityName}
+              {universityName || "Imperial Institute of Management Science & Research"}
             </span>
             <span className="text-[10px] font-bold text-emerald-600">
-              Authorized Admission Partner
+              Autonomous Educational Institute
             </span>
           </div>
         </div>

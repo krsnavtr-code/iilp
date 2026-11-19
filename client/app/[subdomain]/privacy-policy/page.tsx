@@ -33,7 +33,7 @@ function getUniversityContext(subdomain: string) {
     };
   }
   return {
-    name: "Partner Universities",
+    name: "Imperial Institute of Management Science & Research (IIMSR)",
     relationship: "general" as const,
   };
 }
@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { subdomain } = await params;
   const context = getUniversityContext(subdomain);
   return {
-    title: `Privacy Policy | CollegeVihar - ${context.name}`,
-    description: `CollegeVihar Privacy Policy detailing data handling and consumer privacy for ${context.name} admissions inquiries.`,
+    title: `Privacy Policy | ${context.name}`,
+    description: `Privacy Policy detailing data handling and candidate privacy for ${context.name} admissions inquiries.`,
   };
 }
 

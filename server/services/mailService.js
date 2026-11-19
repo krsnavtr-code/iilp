@@ -321,8 +321,9 @@ async function sendLeadNotificationToAdmin(leadData) {
                 <tr>
                   <td align="center">
                     <span style="display: inline-block; font-size: 21px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">
-                      COLLEGE<span style="color: #ffc21c;">VIHAR</span>
+                      IIMSR<span style="color: #f07822;"> ADMISSIONS</span>
                     </span>
+                    <div style="font-size: 11px; color: #cbd5e1; font-weight: 600; margin-top: 2px;">Imperial Institute of Management Science &amp; Research</div>
                     <div style="margin-top: 6px; font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.8px;">
                       🔥 New Admission Lead Captured
                     </div>
@@ -482,7 +483,7 @@ async function sendLeadNotificationToAdmin(leadData) {
           <!-- Footer -->
           <tr>
             <td style="background-color: #f8fafc; padding: 14px 20px; text-align: center; font-size: 11px; line-height: 1.5; color: #94a3b8; border-top: 1px solid #e2e8f0;">
-              This is an automated notification from the <strong>College Vihar Landing Page Platform</strong>.<br />
+              This is an automated notification from the <strong>IIMSR Admissions Portal</strong> (Imperial Institute of Management Science &amp; Research).<br />
               All lead data is encrypted and synced with your database in real-time.
             </td>
           </tr>

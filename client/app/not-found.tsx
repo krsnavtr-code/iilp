@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 text-center bg-slate-50 text-slate-900 font-sans">
@@ -9,16 +11,19 @@ export default function NotFound() {
           Page Not Found
         </h1>
         <p className="text-sm text-slate-600 leading-relaxed">
-          This portal only serves dedicated university program subdomains.
-          Please visit using a valid subdomain (e.g.{" "}
-          <code className="bg-slate-100 text-[#1565c0] px-2 py-0.5 rounded-md font-mono text-xs">
-            amityonlinemba.collegevihar.com
-          </code>
-          ).
+          The requested admission page or program does not exist. Please return to the official IIMSR Admissions Portal.
         </p>
         <div className="pt-2">
+          <Link
+            href="/"
+            className="inline-block px-5 py-2.5 rounded-xl bg-[#071b4b] text-white text-xs font-bold hover:bg-[#0c2a75] transition-colors"
+          >
+            ← Return to IIMSR Home
+          </Link>
+        </div>
+        <div className="pt-2">
           <span className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} College Vihar
+            &copy; {new Date().getFullYear()} Imperial Institute of Management Science &amp; Research (IIMSR)
           </span>
         </div>
       </div>

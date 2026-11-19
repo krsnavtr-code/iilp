@@ -33,7 +33,7 @@ function getUniversityContext(subdomain: string) {
     };
   }
   return {
-    name: "Partner Universities",
+    name: "Imperial Institute of Management Science & Research (IIMSR)",
     relationship: "general" as const,
   };
 }
@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { subdomain } = await params;
   const context = getUniversityContext(subdomain);
   return {
-    title: `Contact Us & Admissions Support | CollegeVihar - ${context.name}`,
-    description: `Connect with CollegeVihar verified counselors for ${context.name} admissions, fees, and eligibility guidance.`,
+    title: `Contact Us & Admissions Support | ${context.name}`,
+    description: `Connect with admissions counsellors for ${context.name} programs, fees, and eligibility guidance.`,
   };
 }
 
@@ -54,7 +54,7 @@ export default async function SubdomainContactUsPage({ params }: PageProps) {
   return (
     <PolicyLayout
       title="Contact Us & Admissions Helpline"
-      subtitle={`Verified academic counseling and admission guidance for ${context.name}`}
+      subtitle={`Academic counseling and admission guidance for ${context.name}`}
       badge="Direct Support & Corporate Address"
       universityContext={context}
     >

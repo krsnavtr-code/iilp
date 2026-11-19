@@ -36,8 +36,8 @@ function getUniversityContext(subdomain: string) {
     };
   }
   return {
-    name: "Partner Universities",
-    shortName: "Universities",
+    name: "Imperial Institute of Management Science & Research (IIMSR)",
+    shortName: "IIMSR",
     relationship: "general" as const,
   };
 }
@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { subdomain } = await params;
   const context = getUniversityContext(subdomain);
   return {
-    title: `Statutory Disclaimer & Affiliation Policy | CollegeVihar - ${context.name}`,
-    description: `Official statutory disclaimer regarding CollegeVihar's authorized partnership status and trademark attributions for ${context.name}.`,
+    title: `Statutory Disclaimer & Disclosures | ${context.name}`,
+    description: `Official statutory disclaimer and institutional disclosures for ${context.name}.`,
   };
 }
 
@@ -58,11 +58,11 @@ export default async function SubdomainDisclaimerPage({ params }: PageProps) {
   return (
     <PolicyLayout
       title="Statutory Disclaimer & Institutional Disclosures"
-      subtitle={`Mandatory disclosures regarding CollegeVihar's authorized partnership with ${context.name}`}
+      subtitle={`Official institutional disclosures for ${context.name}`}
       badge="Mandatory Statutory Disclosure"
       universityContext={context}
     >
-      <DisclaimerContent universityContext={context} />
+      <DisclaimerContent />
     </PolicyLayout>
   );
 }

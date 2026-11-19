@@ -46,6 +46,114 @@ export const SUBDOMAIN_REGISTRY: Record<string, SubdomainModule> = {
     ThankYouComponent: IimsrThankYou,
     metadata: iimsrMetadata,
   },
+  mba: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance MBA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance MBA with dual specialisations in HR, Finance, Marketing, IT and Operations.",
+    },
+  },
+  iimsrmba: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance MBA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance MBA with dual specialisations in HR, Finance, Marketing, IT and Operations.",
+    },
+  },
+  bba: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance BBA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance BBA program for career foundation in business administration.",
+    },
+  },
+  iimsrbba: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance BBA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance BBA program for career foundation in business administration.",
+    },
+  },
+  bca: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance BCA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance BCA program for software development and IT careers.",
+    },
+  },
+  iimsrbca: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance BCA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance BCA program for software development and IT careers.",
+    },
+  },
+  mca: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance MCA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance MCA program for advanced software engineering and cloud computing.",
+    },
+  },
+  iimsrmca: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Online & Distance MCA | IIMSR Admissions",
+      description: "Apply for IIMSR Online & Distance MCA program for advanced software engineering and cloud computing.",
+    },
+  },
+  btech: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "B.Tech & Engineering Diplomas | IIMSR Admissions",
+      description: "Explore IIMSR B.Tech lateral entry and advance polytechnic engineering diplomas in Mechanical, Civil, CSE & Electrical.",
+    },
+  },
+  iimsrbtech: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "B.Tech & Engineering Diplomas | IIMSR Admissions",
+      description: "Explore IIMSR B.Tech lateral entry and advance polytechnic engineering diplomas in Mechanical, Civil, CSE & Electrical.",
+    },
+  },
+  diploma: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Advance Diplomas in Engineering & Management | IIMSR",
+      description: "Fast-track 1-year and 2-year advance diploma programs after 10th, 10+2 and graduation.",
+    },
+  },
+  iimsrdiploma: {
+    Component: IimsrLandingPage,
+    ThankYouComponent: IimsrThankYou,
+    metadata: {
+      ...iimsrMetadata,
+      title: "Advance Diplomas in Engineering & Management | IIMSR",
+      description: "Fast-track 1-year and 2-year advance diploma programs after 10th, 10+2 and graduation.",
+    },
+  },
   amityonlinemba: {
     Component: AmityOnlineMbaPage,
     ThankYouComponent: AmityOnlineMbaThankYou,

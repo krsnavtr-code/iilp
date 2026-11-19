@@ -24,7 +24,10 @@ exports.captureLead = async (req, res) => {
     });
   }
 
-  const cleanSubdomain = (subdomain || "amityonlinemba").toLowerCase().trim();
+  const cleanSubdomain = (subdomain || "iimsr").toLowerCase().trim();
+  const cleanUniversity = university
+    ? university.trim()
+    : "Imperial Institute of Management Science & Research (IIMSR)";
 
   try {
     // 1. Insert lead record into database
@@ -39,10 +42,10 @@ exports.captureLead = async (req, res) => {
           state ? state.trim() : null,
           qualification ? qualification.trim() : null,
           specialisation ? specialisation.trim() : null,
-          university ? university.trim() : null,
+          cleanUniversity,
           program ? program.trim() : null,
           cleanSubdomain,
-          source ? source.trim() : "landing-page",
+          source ? source.trim() : "IIMSR Admissions Landing Page",
         ],
       );
     } catch (colErr) {
@@ -57,7 +60,7 @@ exports.captureLead = async (req, res) => {
           state ? state.trim() : null,
           qualification ? qualification.trim() : null,
           cleanSubdomain,
-          source ? source.trim() : "landing-page",
+          source ? source.trim() : "IIMSR Admissions Landing Page",
         ],
       );
     }
@@ -74,11 +77,11 @@ exports.captureLead = async (req, res) => {
       state: state ? state.trim() : null,
       qualification: qualification ? qualification.trim() : null,
       specialisation: specialisation ? specialisation.trim() : null,
-      university: university ? university.trim() : null,
+      university: cleanUniversity,
       program: program ? program.trim() : null,
       subdomain: cleanSubdomain,
-      source: source ? source.trim() : "landing-page",
-      adminEmail: adminEmail ? adminEmail.trim() : (cleanSubdomain === "iimsr" || cleanSubdomain === "iimsradmissions" ? "anand24h@gmail.com" : null),
+      source: source ? source.trim() : "IIMSR Admissions Landing Page",
+      adminEmail: adminEmail ? adminEmail.trim() : "anand24h@gmail.com",
     }).catch((mailErr) => {
       console.error("[MAIL ASYNC ERROR]:", mailErr.message);
     });
@@ -87,13 +90,13 @@ exports.captureLead = async (req, res) => {
       name: name.trim(),
       email: email.trim(),
       phone: phone.trim(),
-      course: program || specialisation || qualification || cleanSubdomain || "College Vihar Degree",
+      course: program || specialisation || qualification || cleanSubdomain || "IIMSR Degree / Diploma",
       subdomain: cleanSubdomain,
-      university: university ? university.trim() : null,
+      university: cleanUniversity,
       specialisation: specialisation ? specialisation.trim() : null,
       qualification: qualification ? qualification.trim() : null,
       state: state ? state.trim() : null,
-      source: source || "CollegeVihar Landing Page",
+      source: source || "IIMSR Admissions Landing Page",
       lead_type: "Landing Page Lead",
       landing_page: req.headers.referer || `/${cleanSubdomain}`,
     }).catch((syncErr) => {

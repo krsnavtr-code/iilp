@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     "BCA",
     "Admission Counselling",
   ],
-  themeColor: "#071b4b",
   openGraph: {
     title: "One Exam. One Degree. | IIMSR Admissions",
     description:

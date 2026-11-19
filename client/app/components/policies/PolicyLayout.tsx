@@ -18,25 +18,34 @@ export default function PolicyLayout({
   title,
   subtitle,
   badge = "Official Policy Document",
-  lastUpdated = "March 2026",
+  lastUpdated = "2025-2026",
   children,
-  universityContext,
 }: PolicyLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-800 font-sans flex flex-col selection:bg-[#ef3e35] selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] text-slate-800 font-sans flex flex-col selection:bg-[#ffbd25] selection:text-[#071b4b]">
       {/* Top Compliance Bar */}
-      <div className="bg-[#0b1b36] text-slate-300 text-xs py-2 px-4 border-b border-white/10">
+      <div className="bg-[#071b4b] text-slate-200 text-xs py-2 px-4 border-b border-white/10">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span className="font-medium text-slate-200">
-              CollegeVihar – Authorized Admission & Marketing Channel Partner
+            <span className="font-medium text-slate-100">
+              Imperial Institute of Management Science &amp; Research (IIMSR) • ISO 9001:2015 Certified Autonomous Institution
             </span>
           </div>
-          <div className="flex items-center gap-4 text-[11px] text-slate-300">
-            <span>Helpline: <strong className="text-white font-semibold">+91 9266585858</strong></span>
+          <div className="flex items-center gap-4 text-[11px] text-slate-200">
+            <span>
+              Helpline:{" "}
+              <a href="tel:+918287434343" className="text-[#f5c84b] font-bold hover:underline">
+                +91 8287434343
+              </a>
+            </span>
             <span className="hidden sm:inline text-white/30">•</span>
-            <span className="hidden sm:inline">Email: <strong className="text-white font-semibold">info@collegevihar.com</strong></span>
+            <span className="hidden sm:inline">
+              Email:{" "}
+              <a href="mailto:info@iimsr.net.in" className="text-[#f5c84b] font-bold hover:underline">
+                info@iimsr.net.in
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -45,53 +54,43 @@ export default function PolicyLayout({
       <header className="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-[#0a2540] to-[#155ca4] flex items-center justify-center text-white font-black text-lg shadow-sm">
-                CV
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 relative flex-shrink-0">
+                <Image
+                  src="/images/iimsr-logo.png"
+                  alt="IIMSR Logo"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl sm:text-2xl font-black tracking-tight leading-none">
-                  <span className="text-[#0066ff]">College</span><span className="text-[#ee4231]">Vihar</span>
+                <span className="text-xl sm:text-2xl font-black tracking-tight text-[#071b4b] leading-none">
+                  IIMSR
                 </span>
-                <span className="text-[10px] font-bold text-slate-500 tracking-wider uppercase">
-                  Admissions Advisory
+                <span className="text-[10px] font-bold text-slate-600 tracking-wider uppercase mt-0.5">
+                  Imperial Institute of Management Science &amp; Research
                 </span>
               </div>
             </Link>
-
-            {universityContext && (
-              <>
-                <span className="text-slate-300 text-lg hidden sm:inline">|</span>
-                <div className="hidden sm:flex flex-col">
-                  <span className="text-xs font-bold text-slate-700">
-                    {universityContext.name}
-                  </span>
-                  <span className="text-[10px] font-semibold text-emerald-600">
-                    {universityContext.relationship === "ignou"
-                      ? "Independent Student Guidance Partner"
-                      : "Authorized Admission Partner"}
-                  </span>
-                </div>
-              </>
-            )}
           </div>
 
           <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-semibold">
             <Link
               href="/about-us"
-              className="text-slate-600 hover:text-[#0a2540] transition-colors py-1"
+              className="text-slate-600 hover:text-[#071b4b] transition-colors py-1"
             >
               About Us
             </Link>
             <Link
               href="/disclaimer"
-              className="text-slate-600 hover:text-[#0a2540] transition-colors py-1"
+              className="text-slate-600 hover:text-[#071b4b] transition-colors py-1"
             >
               Disclaimer
             </Link>
             <Link
               href="/contact-us"
-              className="px-3.5 py-2 rounded-lg bg-[#0a2540] text-white hover:bg-[#155ca4] transition-colors text-xs font-bold shadow-xs"
+              className="px-3.5 py-2 rounded-lg bg-[#071b4b] text-white hover:bg-[#0c2a75] transition-colors text-xs font-bold shadow-xs"
             >
               Contact Us
             </Link>
@@ -100,23 +99,21 @@ export default function PolicyLayout({
       </header>
 
       {/* Page Title Hero Banner */}
-      <section className="bg-gradient-to-b from-white to-[#f1f5f9] border-b border-slate-200 py-10 sm:py-14">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold mb-4 uppercase tracking-wider">
-            <span>📄</span> {badge}
+      <section className="bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200 py-10 sm:py-14">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#071b4b] text-xs font-bold uppercase tracking-wider">
+            {badge}
           </div>
-          <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3">
+          <h1 className="text-2xl sm:text-4xl font-black text-[#071b4b] tracking-tight">
             {title}
           </h1>
           {subtitle && (
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
               {subtitle}
             </p>
           )}
-          <div className="flex items-center gap-4 text-xs text-slate-600 mt-4 pt-4 border-t border-slate-200">
-            <span>Last Updated: <strong>{lastUpdated}</strong></span>
-            <span>•</span>
-            <span>Entity: <strong>CollegeVihar (Educational Advisory Services)</strong></span>
+          <div className="text-xs text-slate-600 pt-1 font-medium">
+            Academic Session: {lastUpdated} • Imperial Institute of Management Science &amp; Research
           </div>
         </div>
       </section>
@@ -131,35 +128,35 @@ export default function PolicyLayout({
       </main>
 
       {/* Footer Navigation Bar */}
-      <footer className="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800 mt-auto">
+      <footer className="bg-[#071b4b] text-slate-300 text-xs py-10 border-t border-slate-800 mt-auto">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-800 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-white/10 text-center sm:text-left">
             <div>
-              <div className="text-lg font-black">
-                <span className="text-[#0066ff]">College</span><span className="text-[#ee4231]">Vihar</span>
+              <div className="text-lg font-black text-white">
+                IIMSR – Imperial Institute of Management Science &amp; Research
               </div>
-              <p className="text-xs text-slate-400 mt-0.5">
-                Authorized Admission & Marketing Partner for Premier Universities
+              <p className="text-xs text-slate-300 mt-0.5">
+                ISO 9001:2015 Certified Autonomous Institution for Higher Studies • Registered with Govt. of Karnataka
               </p>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 font-semibold text-slate-300">
+            <div className="flex flex-wrap items-center justify-center gap-4 font-semibold text-slate-200">
               <Link href="/about-us" className="hover:text-white transition-colors">About Us</Link>
               <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
+              <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms &amp; Conditions</Link>
               <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
               <Link href="/contact-us" className="hover:text-white transition-colors">Contact Us</Link>
             </div>
           </div>
 
-          <div className="text-slate-400 text-[11px] leading-relaxed space-y-2">
+          <div className="text-slate-300 text-[11px] leading-relaxed space-y-2">
             <p>
-              <strong>Corporate Address:</strong> Plot No. 63, Sector 64 Rd, B Block, Sector 63, Noida, Uttar Pradesh 201301, India (Near Lohia Kia Sales).
+              <strong>Corporate &amp; Admission Office:</strong> E-48, Sector 3, Noida, Gautam Budh Nagar, Uttar Pradesh - 201301, India.
             </p>
             <p>
-              <strong>Contact Helpline:</strong> +91 9266585858 | <strong>Email:</strong> info@collegevihar.com | <strong>Support:</strong> support@collegevihar.com
+              <strong>Helpline:</strong> +91 8287434343 / +91 90272 39150 | <strong>Email:</strong> info@iimsr.net.in | <strong>Website:</strong> https://iimsr.net.in
             </p>
             <p className="text-slate-400 pt-2">
-              © {new Date().getFullYear()} CollegeVihar. All rights reserved. CollegeVihar is an authorized admission counseling & marketing channel partner for Online Manipal and Amity University Online, and provides independent guidance for IGNOU programmes.
+              © {new Date().getFullYear()} Imperial Institute of Management Science &amp; Research (IIMSR). All rights reserved. Providing industry-oriented online &amp; distance education programs in Management, Technology, Computer Applications, and Engineering Diplomas.
             </p>
           </div>
         </div>

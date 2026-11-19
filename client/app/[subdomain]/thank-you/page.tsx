@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   if (!subdomainModule) {
     return {
-      title: "Page Not Found | College Vihar",
+      title: "Page Not Found | IIMSR Admissions",
       description: "The requested page does not exist.",
     };
   }

@@ -7,186 +7,170 @@ export default function AboutUsContent() {
       {/* Introduction */}
       <div>
         <h2 className="text-xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">
-          1. About CollegeVihar
+          1. About IIMSR
         </h2>
         <p className="mb-3">
-          <strong>CollegeVihar</strong> is one of India&apos;s premier educational consultancy and digital admission counseling platforms. We are dedicated to bridging the gap between ambitious learners and premier accredited universities offering flexible online and distance education degrees (including Online MBA, MCA, and BBA programmes).
+          <strong>Imperial Institute of Management Science &amp; Research (IIMSR)</strong> is one of India&apos;s leading autonomous educational institutions for higher studies. Registered with the Government of Karnataka (India) and holding Globus Certificate of Registration (ISO 9001:2015) for being a Quality Training Provider in Business &amp; Technical Courses, IIMSR is committed to grooming students to understand, administer, and manage ever-changing global business dynamics.
         </p>
         <p>
-          Headquartered in Noida, Uttar Pradesh, CollegeVihar has guided over 25,000+ working professionals, undergraduate aspirants, and international students towards UGC-DEB entitled higher education qualifications that empower their career growth.
+          Headquartered in Noida, Uttar Pradesh, with student services spanning India and international locations, IIMSR provides distance, online, and blended education pathways in Management, Computer Applications, Engineering, and Professional Diplomas.
         </p>
       </div>
 
-      {/* Business Identity & Legal Information */}
+      {/* Vision, Mission, and Philosophy */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <div className="text-2xl mb-2">🎯</div>
+          <h3 className="text-base font-bold text-[#071b4b] mb-2">Our Vision</h3>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            To provide high-quality, practical skills at affordable rates to individuals across India, capacitating a competent workforce that competes favourably in the national and global job market.
+          </p>
+        </div>
+        <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <div className="text-2xl mb-2">🚀</div>
+          <h3 className="text-base font-bold text-[#071b4b] mb-2">Our Mission</h3>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            To offer industry-integrated academic programs combining researched curriculum with hands-on practice, grooming future leaders, managers, and technical specialists.
+          </p>
+        </div>
+        <div className="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <div className="text-2xl mb-2">💡</div>
+          <h3 className="text-base font-bold text-[#071b4b] mb-2">Our Philosophy</h3>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            Education must be accessible, flexible, and relevant to modern industrial demands. We believe every learner deserves the opportunity to upgrade their qualifications without career disruption.
+          </p>
+        </div>
+      </div>
+
+      {/* Corporate Identity & Statutory Details */}
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 sm:p-6 space-y-3">
         <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
-          <span>🏢</span> Corporate Business Identity &amp; Contact Details
+          <span>🏛️</span> Institutional Identity &amp; Statutory Details
         </h3>
         <p className="text-xs text-slate-600">
-          In full compliance with statutory e-commerce and digital advertising consumer transparency standards, the official identity of the platform is detailed below:
+          In full transparency with prospective students, regulatory bodies, and academic partners, the institutional profile of IIMSR is presented below:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-2">
           <div className="space-y-1">
             <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Platform &amp; Brand Name:
+              Institution Name:
             </span>
-            <span className="font-bold text-slate-900 text-sm">CollegeVihar</span>
+            <span className="font-bold text-slate-900 text-sm">
+              Imperial Institute of Management Science &amp; Research (IIMSR)
+            </span>
           </div>
           <div className="space-y-1">
             <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Nature of Business:
+              Quality Certification:
+            </span>
+            <span className="text-slate-800 font-semibold">
+              ISO 9001:2015 Certified (Globus Registration)
+            </span>
+          </div>
+          <div className="space-y-1">
+            <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
+              Institutional Status:
             </span>
             <span className="text-slate-800">
-              Higher Education Advisory, Admission Guidance &amp; Authorized University Channel Partner
+              Autonomous Educational Institute of International Standards; Registered with Govt. of Karnataka
             </span>
+          </div>
+          <div className="space-y-1">
+            <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
+              Official Portal:
+            </span>
+            <a href="https://iimsr.net.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-bold hover:underline">
+              https://iimsr.net.in
+            </a>
           </div>
           <div className="space-y-1 md:col-span-2">
             <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Registered Corporate Office:
+              Corporate &amp; Admission Office:
             </span>
             <span className="text-slate-800 font-medium">
-              Plot No. 63, Sector 64 Rd, B Block, Sector 63, Noida, Uttar Pradesh 201301, India (Near Lohia Kia Sales)
+              E-48, Sector 3, Noida, Gautam Budh Nagar, Uttar Pradesh - 201301, India
             </span>
           </div>
           <div className="space-y-1">
             <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Student Helpline / Phone:
+              Admission Helpline:
             </span>
-            <a href="tel:+919266585858" className="text-blue-700 font-bold hover:underline">
-              +91 9266585858
+            <a href="tel:+918287434343" className="text-blue-700 font-bold hover:underline">
+              +91 8287434343 / +91 90272 39150
             </a>
           </div>
           <div className="space-y-1">
             <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Official Email Addresses:
+              Official Email:
             </span>
-            <div className="text-slate-800">
-              <a href="mailto:info@collegevihar.com" className="text-blue-700 hover:underline">info@collegevihar.com</a>
-              {" • "}
-              <a href="mailto:support@collegevihar.com" className="text-blue-700 hover:underline">support@collegevihar.com</a>
-            </div>
-          </div>
-          <div className="space-y-1">
-            <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Support Working Hours:
-            </span>
-            <span className="text-slate-800">
-              Monday to Saturday: 9:30 AM – 6:30 PM IST (Sundays by appointment)
-            </span>
-          </div>
-          <div className="space-y-1">
-            <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px] block">
-              Official Website:
-            </span>
-            <a href="https://collegevihar.com" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-medium hover:underline">
-              https://collegevihar.com
+            <a href="mailto:info@iimsr.net.in" className="text-blue-700 font-bold hover:underline">
+              info@iimsr.net.in
             </a>
           </div>
         </div>
       </div>
 
-      {/* Actual Affiliation & Partnership Clarification */}
+      {/* Key Academic Advantages */}
       <div>
         <h2 className="text-xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">
-          2. University Partnerships &amp; Affiliation Disclosure
+          2. The IIMSR Advantage
         </h2>
-        <p className="mb-4">
-          CollegeVihar believes in 100% honesty and transparency. We strictly clarify our specific and actual working relationships with university institutions so that prospective students and statutory bodies are fully aware of our exact capacity:
-        </p>
+        <div className="space-y-3 text-sm text-slate-600">
+          <p>
+            <strong>Flexible Study Options:</strong> IIMSR offers weekend classes to management and technical students at designated centers to resolve doubts, alongside complete online learning resources including recorded video lectures, PPT presentations, and comprehensive course kits.
+          </p>
+          <p>
+            <strong>Modern Examination System:</strong> Students can choose to undertake written examinations at test centers or complete evaluations through case-study based online systems. Examination schedules, admit cards, and results are published on the official web portal for total transparency.
+          </p>
+          <p>
+            <strong>Social Inclusion &amp; Reservation:</strong> IIMSR reserves 15% seats in each stream for SC, ST, OBC, Persons with Disabilities (Handicapped), Armed Forces Personnel, Kashmiri Migrants, and Children of War Widows, alongside a 10% permissible fee discount upon submission of documentary proof.
+          </p>
+          <p>
+            <strong>Merit Scholarships:</strong> Up to 50% tuition fee waiver scholarships are awarded to meritorious and economically disadvantaged students at the discretion of the Academic Council.
+          </p>
+          <p>
+            <strong>Placement Cell Assistance:</strong> The dedicated IIMSR placement wing works continuously to assist students and alumni in securing rewarding career opportunities in leading corporate enterprises.
+          </p>
+        </div>
+      </div>
 
-        <div className="space-y-4">
-          {/* Online Manipal */}
-          <div className="border border-blue-100 bg-blue-50/50 rounded-xl p-4 sm:p-5">
-            <div className="flex items-center justify-between gap-2 mb-2">
-              <h4 className="font-bold text-blue-950 text-base">
-                Online Manipal (Manipal University Jaipur - MUJ)
-              </h4>
-              <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">
-                Authorized Channel Partner
-              </span>
-            </div>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-              <strong>CollegeVihar is an Authorized Admission &amp; Digital Marketing Channel Partner</strong> for Online Manipal programmes (MBA, MCA, BBA). In this capacity, our academic advisors assist students with authentic fee schedules, eligibility verification, scholarship queries, and streamline application submission to Manipal University Jaipur.
-            </p>
+      {/* Academic Streams */}
+      <div>
+        <h2 className="text-xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">
+          3. Faculties &amp; Programs Offered
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+            <h4 className="font-bold text-sm text-[#071b4b] mb-1.5">Management Programs (57+ Courses)</h4>
+            <p className="text-slate-600">BBA, MBA (Dual &amp; Executive), Post Graduate Diplomas in Human Resource Management, Financial Management, Marketing, Operations, Logistics &amp; Supply Chain, Tourism, and Hospital Administration.</p>
           </div>
-
-          {/* Amity Online */}
-          <div className="border border-amber-100 bg-amber-50/50 rounded-xl p-4 sm:p-5">
-            <div className="flex items-center justify-between gap-2 mb-2">
-              <h4 className="font-bold text-amber-950 text-base">
-                Amity University Online
-              </h4>
-              <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800">
-                Authorized Admission Partner
-              </span>
-            </div>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-              <strong>CollegeVihar is an Authorized Admission &amp; Marketing Channel Partner</strong> for Amity University Online programmes (MBA, MCA, BBA). Our counsellors assist learners with curriculum breakdowns, career track specializations, no-cost EMI paperwork, and direct admission coordination with Amity University Online.
-            </p>
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+            <h4 className="font-bold text-sm text-[#071b4b] mb-1.5">Technical &amp; Software (30+ Courses)</h4>
+            <p className="text-slate-600">BCA, MCA, Software Engineering, Hardware &amp; Networking, Cyber Security, Artificial Intelligence, and Cloud Computing.</p>
           </div>
-
-          {/* IGNOU */}
-          <div className="border border-slate-200 bg-slate-50 rounded-xl p-4 sm:p-5">
-            <div className="flex items-center justify-between gap-2 mb-2">
-              <h4 className="font-bold text-slate-900 text-base">
-                IGNOU (Indira Gandhi National Open University)
-              </h4>
-              <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-700">
-                Independent Guidance Advisory
-              </span>
-            </div>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-              <strong>Important Transparency Notice:</strong> IGNOU is a central open university established by an Act of Parliament that does not appoint private marketing agencies or authorized commercial franchises. CollegeVihar functions strictly as an <strong>Independent Career Guidance &amp; Information Advisory</strong>. We provide prospective students with syllabus clarification, eligibility advice, assignment guidance, and step-by-step navigation for official IGNOU portal submissions (<code className="text-xs bg-slate-200 px-1 rounded">ignou.ac.in</code> / <code className="text-xs bg-slate-200 px-1 rounded">ignouiop.samarth.edu.in</code>).
-            </p>
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+            <h4 className="font-bold text-sm text-[#071b4b] mb-1.5">Engineering &amp; Polytechnic Diplomas</h4>
+            <p className="text-slate-600">B.Tech, M.Tech, and Advance Diplomas in Civil Engineering, Mechanical, Computer Science, Electrical &amp; Electronics, Automobile, and Chemical Engineering.</p>
+          </div>
+          <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+            <h4 className="font-bold text-sm text-[#071b4b] mb-1.5">Design &amp; Contemporary Careers</h4>
+            <p className="text-slate-600">Animation &amp; Multimedia Technology, Interior Design, Digital Performance Marketing, and Security Management.</p>
           </div>
         </div>
       </div>
 
-      {/* What We Do */}
-      <div>
-        <h2 className="text-xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">
-          3. Our Services &amp; Student Commitments
-        </h2>
-        <ul className="space-y-3 text-sm">
-          <li className="flex items-start gap-2.5">
-            <span className="text-emerald-600 font-bold text-base">✓</span>
-            <div>
-              <strong>100% Free &amp; Unbiased Counselling:</strong> We do not charge students any consultation fees for academic counselling or university comparison.
-            </div>
-          </li>
-          <li className="flex items-start gap-2.5">
-            <span className="text-emerald-600 font-bold text-base">✓</span>
-            <div>
-              <strong>Verified Fees &amp; Direct Fee Payments:</strong> Course tuition fees are paid directly to the respective university accounts. CollegeVihar never collects unauthorized cash or personal transfers for university tuition fees.
-            </div>
-          </li>
-          <li className="flex items-start gap-2.5">
-            <span className="text-emerald-600 font-bold text-base">✓</span>
-            <div>
-              <strong>0% Interest EMI Assistance:</strong> We connect applicants with authorized banking and NBFC partners to facilitate flexible, low-cost installment schemes.
-            </div>
-          </li>
-          <li className="flex items-start gap-2.5">
-            <span className="text-emerald-600 font-bold text-base">✓</span>
-            <div>
-              <strong>End-to-End Documentation Support:</strong> Our team assists candidates in compiling qualifying marksheets, government IDs, and experience certificates for accurate university enrollment.
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      {/* Our Mission */}
-      <div className="bg-gradient-to-r from-[#0a2540] to-[#155ca4] text-white p-6 sm:p-8 rounded-2xl">
-        <h3 className="text-lg font-bold mb-2">Our Mission</h3>
-        <p className="text-sm text-slate-200 leading-relaxed mb-4">
-          To democratize access to top-tier higher education across India by offering authentic counseling, accurate fee insights, and career-aligned degree pathways with zero hidden terms.
+      {/* Call to Action */}
+      <div className="bg-gradient-to-r from-[#071b4b] to-[#0f2d7a] rounded-xl p-6 text-white text-center space-y-3">
+        <h3 className="text-lg font-bold">Have Questions About Admissions or Course Eligibility?</h3>
+        <p className="text-xs text-blue-100 max-w-lg mx-auto">
+          Our admission counsellors provide personalized 1-on-1 guidance to help you select the ideal academic program aligned with your career goals.
         </p>
-        <div className="flex flex-wrap items-center gap-4 text-xs font-semibold">
-          <Link href="/contact-us" className="px-4 py-2 rounded-lg bg-[#ef3e35] text-white hover:bg-[#d6342c] transition-colors">
-            Contact Our Advisors →
-          </Link>
-          <Link href="/disclaimer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
-            Read Statutory Disclaimer
+        <div className="pt-2">
+          <Link
+            href="/contact-us"
+            className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#ffc52c] to-[#f28a00] text-slate-900 font-extrabold text-xs shadow-md hover:brightness-105 transition-all"
+          >
+            Connect With an Admission Counsellor →
           </Link>
         </div>
       </div>

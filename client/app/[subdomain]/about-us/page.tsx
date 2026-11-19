@@ -33,7 +33,7 @@ function getUniversityContext(subdomain: string) {
     };
   }
   return {
-    name: "Partner Universities",
+    name: "Imperial Institute of Management Science & Research (IIMSR)",
     relationship: "general" as const,
   };
 }
@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { subdomain } = await params;
   const context = getUniversityContext(subdomain);
   return {
-    title: `About Us | CollegeVihar - Authorized Partner for ${context.name}`,
-    description: `Learn about CollegeVihar's business identity, contact details, and partnership status for ${context.name}.`,
+    title: `About Us | ${context.name}`,
+    description: `Learn about ${context.name}, an ISO 9001:2015 certified autonomous educational institution offering distance & online courses.`,
   };
 }
 
@@ -53,9 +53,9 @@ export default async function SubdomainAboutUsPage({ params }: PageProps) {
 
   return (
     <PolicyLayout
-      title="About CollegeVihar"
-      subtitle={`Authorized Admission & Marketing Partner for ${context.name}`}
-      badge="Corporate Identity & Verified Partnerships"
+      title={`About ${context.name}`}
+      subtitle="ISO 9001:2015 Certified Autonomous Institution • Registered with Govt. of Karnataka"
+      badge="Institutional Profile & Credentials"
       universityContext={context}
     >
       <AboutUsContent />

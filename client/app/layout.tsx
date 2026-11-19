@@ -19,11 +19,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "College Vihar - Online Degree Program Guidance",
+  title: "IIMSR | Imperial Institute of Management Science & Research - Admissions",
   description:
-    "Explore top online MBA, MCA, and BBA programs from premier universities with College Vihar.",
+    "Imperial Institute of Management Science & Research (IIMSR) is an ISO 9001:2015 certified autonomous institution offering distance & online BBA, BCA, MBA, MCA, B.Tech and Engineering Diplomas.",
+  keywords: [
+    "IIMSR",
+    "Imperial Institute of Management Science and Research",
+    "Online MBA",
+    "Online BCA",
+    "Online BBA",
+    "Online MCA",
+    "B.Tech Distance",
+    "Engineering Diploma",
+    "IIMSR Admissions",
+  ],
   icons: {
-    icon: "/icon.webp",
+    icon: "/favicon.ico",
   },
 };
 

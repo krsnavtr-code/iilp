@@ -152,18 +152,32 @@ export default function IimsrLandingPage({
       />
 
       {/* Topbar */}
-      <div className="bg-[#071b4b] text-white text-[13px] py-2.5">
+      <div className="bg-[#071b4b] text-white text-[13px] py-2 px-4 border-b border-white/10">
         <div className="w-[min(1160px,92%)] mx-auto flex justify-between items-center gap-3 flex-wrap">
-          <span>Admissions Enquiry • Free Counselling</span>
-          <span>
-            Call us:{" "}
-            <a
-              href={`tel:+91${WA_NUMBER}`}
-              className="font-bold hover:underline"
-            >
-              <strong>{DISPLAY_PHONE}</strong>
-            </a>
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Admissions Open 2025-26 • ISO 9001:2015 Certified Autonomous Institution</span>
+          </div>
+          <div className="flex items-center gap-4 text-xs font-semibold">
+            <span>
+              Helpline:{" "}
+              <a href="tel:+918287434343" className="text-[#ffbd25] font-bold hover:underline">
+                +91 8287434343
+              </a>
+            </span>
+            <span>•</span>
+            <span>
+              WhatsApp:{" "}
+              <a
+                href={`https://wa.me/${WA_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 font-bold hover:underline"
+              >
+                {DISPLAY_PHONE}
+              </a>
+            </span>
+          </div>
         </div>
       </div>
 
@@ -391,12 +405,16 @@ export default function IimsrLandingPage({
                       <option value="" disabled>
                         Choose programme
                       </option>
-                      <option value="B.Tech">B.Tech</option>
-                      <option value="MBA">MBA</option>
-                      <option value="BBA">BBA</option>
-                      <option value="M.Tech">M.Tech</option>
-                      <option value="BCA">BCA</option>
-                      <option value="Need guidance">Need guidance</option>
+                      <option value="MBA">Online MBA (Master of Business Admin)</option>
+                      <option value="BBA">Online BBA (Bachelor of Business Admin)</option>
+                      <option value="MCA">Online MCA (Master of Computer Applications)</option>
+                      <option value="BCA">Online BCA (Bachelor of Computer Applications)</option>
+                      <option value="B.Tech">B.Tech Engineering (Mechanical / Civil / CSE / Electrical)</option>
+                      <option value="M.Tech">M.Tech (Master of Technology)</option>
+                      <option value="Advance Diploma in Engineering">Advance Diploma in Engineering (Polytechnic)</option>
+                      <option value="Advance Diploma in Business Admin">Advance Diploma in Business Administration</option>
+                      <option value="Digital Marketing / Multimedia">Digital Marketing / Animation &amp; Multimedia</option>
+                      <option value="Need guidance">Need guidance from counsellor</option>
                     </select>
                   </div>
                 </div>
@@ -683,30 +701,63 @@ export default function IimsrLandingPage({
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#061638] text-[#dce4f4] pt-8 pb-24 md:pb-8 text-[13px]">
-        <div className="w-[min(1160px,92%)] mx-auto flex flex-col md:flex-row justify-between gap-5 leading-normal">
-          <div>
-            <strong className="text-white font-bold block mb-1">
-              IIMSR – Imperial Institute of Management Science & Research
-            </strong>
-            Admission information and counselling enquiry
+      <footer className="bg-[#061638] text-[#dce4f4] pt-10 pb-24 md:pb-10 text-[13px] border-t border-white/10">
+        <div className="w-[min(1160px,92%)] mx-auto space-y-6">
+          <div className="flex flex-col md:flex-row justify-between gap-6 leading-normal pb-6 border-b border-white/10">
+            <div>
+              <strong className="text-white text-base font-bold block mb-1">
+                Imperial Institute of Management Science &amp; Research (IIMSR)
+              </strong>
+              <p className="text-xs text-slate-300 max-w-md">
+                ISO 9001:2015 Certified Autonomous Institution for Higher Studies • Registered with Govt. of Karnataka. Offering distance and online degree &amp; diploma programs.
+              </p>
+              <div className="text-xs text-slate-400 mt-2">
+                <strong>Office Address:</strong> E-48, Sector 3, Noida, Gautam Budh Nagar, Uttar Pradesh - 201301
+              </div>
+            </div>
+            <div className="space-y-1.5 text-xs">
+              <div>
+                <strong>Admission Helpline:</strong>{" "}
+                <a href="tel:+918287434343" className="text-white font-bold hover:underline">
+                  +91 8287434343
+                </a>
+              </div>
+              <div>
+                <strong>WhatsApp Desk:</strong>{" "}
+                <a
+                  href={`https://wa.me/${WA_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 font-bold hover:underline"
+                >
+                  {DISPLAY_PHONE}
+                </a>
+              </div>
+              <div>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:info@iimsr.net.in" className="text-amber-300 hover:underline">
+                  info@iimsr.net.in
+                </a>
+              </div>
+              <div>
+                <strong>Official Portal:</strong>{" "}
+                <a href="https://iimsr.net.in" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">
+                  iimsr.net.in
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            Call:{" "}
-            <a href={`tel:+91${WA_NUMBER}`} className="text-white font-bold">
-              {DISPLAY_PHONE}
-            </a>{" "}
-            &nbsp;|&nbsp;{" "}
-            <a
-              href={`https://wa.me/${WA_NUMBER}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#dce4f4] hover:text-white underline decoration-dotted"
-            >
-              WhatsApp us
-            </a>
+
+          <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
+            <div className="flex flex-wrap gap-4 font-semibold text-slate-300">
+              <a href="/about-us" className="hover:text-white transition-colors">About Us</a>
+              <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms-and-conditions" className="hover:text-white transition-colors">Terms &amp; Conditions</a>
+              <a href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
+              <a href="/contact-us" className="hover:text-white transition-colors">Contact Us</a>
+            </div>
+            <div>© {currentYear} Imperial Institute of Management Science &amp; Research (IIMSR). All rights reserved.</div>
           </div>
-          <div>© {currentYear} • All rights reserved.</div>
         </div>
       </footer>
 
@@ -869,12 +920,16 @@ export default function IimsrLandingPage({
                     defaultValue="MBA"
                     className="w-full px-3 py-2.5 sm:py-3 border border-[#d9deea] rounded-[10px] text-sm outline-none bg-white focus:border-[#3158a5] focus:ring-4 focus:ring-[#3158a5]/10 transition-all"
                   >
-                    <option value="MBA">MBA</option>
-                    <option value="B.Tech">B.Tech</option>
-                    <option value="BBA">BBA</option>
-                    <option value="M.Tech">M.Tech</option>
-                    <option value="BCA">BCA</option>
-                    <option value="Need guidance">Need guidance</option>
+                    <option value="MBA">Online MBA (Master of Business Admin)</option>
+                    <option value="BBA">Online BBA (Bachelor of Business Admin)</option>
+                    <option value="MCA">Online MCA (Master of Computer Applications)</option>
+                    <option value="BCA">Online BCA (Bachelor of Computer Applications)</option>
+                    <option value="B.Tech">B.Tech Engineering (Mechanical / Civil / CSE / Electrical)</option>
+                    <option value="M.Tech">M.Tech (Master of Technology)</option>
+                    <option value="Advance Diploma in Engineering">Advance Diploma in Engineering (Polytechnic)</option>
+                    <option value="Advance Diploma in Business Admin">Advance Diploma in Business Administration</option>
+                    <option value="Digital Marketing / Multimedia">Digital Marketing / Animation &amp; Multimedia</option>
+                    <option value="Need guidance">Need guidance from counsellor</option>
                   </select>
                 </div>
               </div>
