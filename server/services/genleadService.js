@@ -1,9 +1,9 @@
-﻿const GENLEAD_BASE_URL = process.env.GENLEAD_API_URL || "https://genlead.in";
+const GENLEAD_BASE_URL = process.env.GENLEAD_API_URL || "https://genlead.in";
 const GENLEAD_SECRET_KEY = process.env.GENLEAD_SECRET_KEY || "eklabya_contact_secret_key_2026";
 const GENLEAD_ORGANIZATION_ID = parseInt(process.env.GENLEAD_ORGANIZATION_ID || "2", 10);
 
 /**
- * Real-time automatic push of College Vihar Landing Page Lead to Genlead CRM (Org ID: 2)
+ * Real-time automatic push of IIMSR Landing Page Lead to Genlead CRM
  */
 async function pushToGenlead(leadData) {
   try {
@@ -28,7 +28,7 @@ async function pushToGenlead(leadData) {
 
     const payload = {
       organization_id: GENLEAD_ORGANIZATION_ID,
-      agent_id: parseInt(process.env.GENLEAD_AGENT_ID || "1", 10), // Organization ID 2 for College Vihar
+      agent_id: parseInt(process.env.GENLEAD_AGENT_ID || "1", 10),
       name: leadData.name || "",
       full_name: leadData.name || "",
       email: leadData.email || "",
@@ -36,7 +36,7 @@ async function pushToGenlead(leadData) {
       mobile: leadData.phone || "",
       courses: courseTitle,
       course: courseTitle,
-      lead_source: leadData.source || leadData.lead_source || "CollegeVihar Landing Page",
+      lead_source: leadData.source || leadData.lead_source || "IIMSR Landing Page",
       lead_type: leadData.lead_type || (leadData.is_partial ? "Partial Form Lead" : "Landing Page Lead"),
       utm_source: leadData.utm_source || "",
       utm_campaign: leadData.utm_campaign || leadData.campaign || "",

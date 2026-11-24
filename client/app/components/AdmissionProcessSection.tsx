@@ -20,7 +20,7 @@ export default function AdmissionProcessSection({
             Seamless Online Admission Process
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-2">
-            Complete your application and document verification 100% online from home with step-by-step assistance from College Vihar.
+            Complete your application and document verification 100% online from home with step-by-step assistance from IIMSR.
           </p>
         </div>
 

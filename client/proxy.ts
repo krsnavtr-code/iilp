@@ -31,7 +31,7 @@ export function proxy(request: NextRequest) {
     });
   }
 
-  // Check if host is a valid subdomain (*.collegevihar.com, *.localhost, *.local)
+  // Check if host is a valid subdomain (*.iimsr.net.in, *.localhost, *.local)
   const isSubdomain =
     hostname.endsWith(`.${rootDomain}`) ||
     hostname.endsWith(".localhost") ||

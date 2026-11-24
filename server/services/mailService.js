@@ -54,19 +54,18 @@ async function sendLeadNotificationToAdmin(leadData) {
     adminEmail: customAdminEmail,
   } = leadData;
 
-  const safeSubdomain = subdomain ? String(subdomain).trim() : "collegevihar.com";
+  const safeSubdomain = subdomain ? String(subdomain).trim() : "iimsr.net.in";
   const normalizedSubdomain = safeSubdomain.toLowerCase();
 
   const adminEmail = (
     customAdminEmail ||
-    (normalizedSubdomain === "iimsr" || normalizedSubdomain === "iimsradmissions"
-      ? "krishnaavtar955@gmail.com"
-      : process.env.ADMIN_EMAIL || "krishnaavtar955@gmail.com")
+    process.env.ADMIN_EMAIL ||
+    "anand24h@gmail.com,info@iimsr.net.in"
   ).trim();
-  const fromName = (process.env.MAIL_FROM_NAME || "Collegevihar")
+  const fromName = (process.env.MAIL_FROM_NAME || "IIMSR Admissions")
     .replace(/['"]/g, "")
     .trim();
-  const fromAddress = (process.env.MAIL_FROM_ADDRESS || "noreply@collegevihar.com")
+  const fromAddress = (process.env.MAIL_FROM_ADDRESS || "info@iimsr.net.in")
     .replace(/['"]/g, "")
     .trim();
 

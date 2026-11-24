@@ -60,7 +60,7 @@ export default function ProgramLandingTemplate({
     `${universityName} ${programName} – Fees, Eligibility, Specialisations & Admission Guide`;
   const heroSubtitle =
     content.heroSubtitle ||
-    `Explore ${universityName} ${programName} fees, eligibility, specialisations, curriculum, learning format and admission guidance. Get help from a College Vihar counsellor.`;
+    `Explore ${universityName} ${programName} fees, eligibility, specialisations, curriculum, learning format and admission guidance. Get help from an IIMSR counsellor.`;
   const heroFacts: string[] = content.heroFacts || [
     "2-Year MBA Program",
     "100% Online Learning",
@@ -285,14 +285,14 @@ export default function ProgramLandingTemplate({
     "Get guidance on eligibility, fees, specialisations and the admission process.";
   const footerDisclaimer =
     content.footerDisclaimer ||
-    "College Vihar is an independent education counselling and admission guidance platform. This page is created for informational and counselling purposes and is not the official website of the university. Program eligibility, fees, admissions, enrollment and other academic decisions are determined by the university. College Vihar does not guarantee admission, employment, salary or placement outcomes.";
+    "IIMSR is an independent education counselling and admission guidance platform. This page is created for informational and counselling purposes and is not the official website of the university. Program eligibility, fees, admissions, enrollment and other academic decisions are determined by the university. IIMSR does not guarantee admission, employment, salary or placement outcomes.";
 
   return (
     <div className="font-sans text-[#17233d]">
       <header className="sticky top-0 z-50 bg-white border-b border-[#e3e8f0]">
         <div className="w-[min(1180px,92%)] mx-auto h-[68px] flex items-center justify-between">
-          <a className="text-2xl font-extrabold text-[#1565c0]" href="/">
-            College<span className="text-[#ef3e35]">Vihar</span>
+          <a className="text-2xl font-extrabold text-[#071b4b]" href="/">
+            IIMSR
           </a>
           <nav className="hidden md:flex gap-6 text-sm font-semibold items-center">
             {navLinks.map((link) => (
@@ -445,7 +445,7 @@ export default function ProgramLandingTemplate({
                   )}
                   <p className="text-xs text-[#687386] text-center">
                     By submitting this form, you agree to be contacted by
-                    College Vihar regarding education counselling and admission
+                    IIMSR regarding education counselling and admission
                     guidance.
                   </p>
                 </form>
