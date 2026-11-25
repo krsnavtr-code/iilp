@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Metadata } from "next";
 import Navbar from "@/app/components/Navbar";
 import HeroSection from "@/app/components/HeroSection";
@@ -334,6 +335,24 @@ export default function OnlineManipalBbaPage({
 }) {
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-[#f7a51c]/30 selection:text-slate-900">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-onlinemanipalbba-page"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       <Navbar
         universityName={data.universityName}
         programName={data.programName}

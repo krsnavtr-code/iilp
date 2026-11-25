@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import { useState, FormEvent } from "react";
 import CompliantFooter from "@/app/components/CompliantFooter";
 
@@ -289,6 +291,24 @@ export default function ProgramLandingTemplate({
 
   return (
     <div className="font-sans text-[#17233d]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-program-landing-template"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       <header className="sticky top-0 z-50 bg-white border-b border-[#e3e8f0]">
         <div className="w-[min(1180px,92%)] mx-auto h-[68px] flex items-center justify-between">
           <a className="text-2xl font-extrabold text-[#071b4b]" href="/">

@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import React, { useState, useEffect, FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -137,6 +139,24 @@ export default function RootHomePage() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-900 font-sans flex flex-col selection:bg-[#ffbd25] selection:text-[#071b4b]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-root-page"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* 1. Top Compliance & Helpline Announcement Bar */}
       <div className="bg-[#071b4b] text-white py-2 px-4 text-xs font-semibold border-b border-white/10">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 text-center sm:text-left">

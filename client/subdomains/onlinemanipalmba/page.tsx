@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import { useState, useEffect, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -216,6 +218,24 @@ export default function OnlineManipalMbaPage({
 
   return (
     <div className="min-h-screen bg-[#f8f7fd] text-[#1e1742] font-sans selection:bg-[#e85923] selection:text-white">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-onlinemanipalmba-page"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* Top Compliance Bar */}
       <div className="bg-[#140f2e] text-[#a59ec7] text-[11px] py-1.5 px-4 border-b border-white/5 font-semibold">
         <div className="w-[min(1220px,94%)] mx-auto flex flex-wrap items-center justify-between gap-2 text-center sm:text-left">

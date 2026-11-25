@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import { useState, useEffect, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -317,6 +319,24 @@ export default function IgnouOnlineMcaPage({
 
   return (
     <div className="min-h-screen bg-[#f5f8fc] text-[#12233b] font-sans antialiased selection:bg-[#f3c64b] selection:text-[#071a36]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-ignouonlinemca-page"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* 1. TOP COMPLIANCE & TRUST BAR */}
       <div className="bg-[#051427] text-slate-300 text-[11px] py-2 px-4 border-b border-white/10 font-semibold sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
         <div className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between gap-2 text-center sm:text-left">

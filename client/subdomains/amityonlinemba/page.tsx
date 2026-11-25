@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import { useState, useEffect, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import CompliantFooter from "@/app/components/CompliantFooter";
@@ -114,6 +116,24 @@ export default function AmityOnlineMbaPage({
 
   return (
     <div className="min-h-screen bg-[#f5f7fb] text-[#17243a] font-['Inter',system-ui,-apple-system,sans-serif] antialiased overflow-x-hidden selection:bg-[#ffc21c] selection:text-[#071f58]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-aw-amityonlinemba-page"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* 1. STICKY TOP HEADER WRAPPER */}
       <header className="sticky top-0 z-50 shadow-lg bg-[#1b325e]">
         {/* TOP SCHOLARSHIP COUNTDOWN NOTIFICATION BAR */}

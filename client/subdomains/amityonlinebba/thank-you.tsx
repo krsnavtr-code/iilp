@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import Link from "next/link";
 import CompliantFooter from "@/app/components/CompliantFooter";
 
@@ -10,6 +12,24 @@ export default function AmityOnlineBbaThankYou({
 }) {
   return (
     <div className="min-h-screen bg-[#f5f7fb] text-[#17243a] font-sans flex flex-col justify-between selection:bg-[#ffc21c] selection:text-[#071f58]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-amityonlinebba-thank-you"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* Top Header */}
       <header className="bg-[#1b325e] shadow-md">
         <div className="w-[min(1160px,92%)] mx-auto h-[68px] flex items-center justify-between">

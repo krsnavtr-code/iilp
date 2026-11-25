@@ -1,5 +1,7 @@
 "use client";
 
+import Script from "next/script";
+
 import Link from "next/link";
 import Image from "next/image";
 import CompliantFooter from "@/app/components/CompliantFooter";
@@ -14,6 +16,24 @@ export default function IgnouOnlineMbaThankYou({
 }) {
   return (
     <div className="min-h-screen bg-[#f5f8fc] text-[#12233b] font-sans flex flex-col justify-between selection:bg-[#f3c64b] selection:text-[#071a36]">
+      {/* Google Tag (AW-18394023977) */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtm.js?id=AW-18394023977"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-ignouonlinemba-thank-you"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `,
+        }}
+      />
+
       {/* Top Header */}
       <header className="bg-gradient-to-r from-[#06192f] to-[#103963] shadow-md border-b border-white/10">
         <div className="w-[min(1160px,92%)] mx-auto h-[74px] flex items-center justify-between">
